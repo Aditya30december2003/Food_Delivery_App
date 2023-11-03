@@ -5,6 +5,7 @@ import {BsFillCartFill , BsFillSaveFill} from 'react-icons/bs'
 import {TbTruckDelivery} from 'react-icons/tb'
 import {MdHelp, MdFavorite} from 'react-icons/md'
 import {FaWallet , FaUserFriends} from 'react-icons/fa'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   const [nav , setNav]= useState(false)
@@ -31,8 +32,12 @@ const Navbar = () => {
 
     <div className="right mr-[1rem] hidden md:flex">
     <button className="flex place-items-center w-24 rounded-[0.8rem] bg-black">
-    <BsFillCartFill className="ml-2" size={20} color='white'/>
-     <p className="px-3 text-white">Cart</p>
+    {/* <BsFillCartFill className="ml-2" size={20} color='white'/>
+     <p className="px-3 text-white">Cart</p> */}
+     <NavLink to='/Food_Delivery_App/signup'
+      className='mx-auto text-white text-center'>
+        Log in
+      </NavLink>
     </button>
     </div>
 
