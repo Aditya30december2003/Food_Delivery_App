@@ -1,10 +1,15 @@
-import React,{useState} from 'react'
+import React,{useState , useContext , useEffect} from 'react'
 import {burger} from '../Data/burger'
 import {BiCartAdd} from 'react-icons/bi'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { ShopContext } from '../context/shop-context'
 
  const Burger= () => {
         const [burgers , setBurgers ] = useState(burger);
-    
+        const { addToCart , cartItems } = useContext(ShopContext);
+
         const filterPrice=(price)=>{
             setBurgers(
               burger.filter((item)=>{
@@ -12,6 +17,9 @@ import {BiCartAdd} from 'react-icons/bi'
               })
             )
           }
+          useEffect(() => {
+            AOS.init();
+          }, [])
 
   return (
 
@@ -41,14 +49,14 @@ import {BiCartAdd} from 'react-icons/bi'
       </div>
 
        <div className='max-w-[1180px] mx-auto'>
-       <div className='grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-6 pt-6 cursor-pointer'>
+       <div className='grid md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 gap-6 cursor-pointer'>
          {burgers.map((item,index)=>(
-          <div key={index} className='border shadow-lg hover:scale-105 duration-300 rounded-t-lg'>
+          <div key={index} className='border shadow-lg hover:scale-105 duration-300 rounded-t-lg' data-aos="fade-up" data-aos-duration="1500">
             <img src={item.image} alt={item.name} className='w-full h-[12rem] object-cover  rounded-t-lg' />
             <div className='flex justify-between py-3'>
               <p className='font-bold mx-2'>{item.name}</p>
               <p className='bg-purple-500 px-5 py-1 mr-2 rounded-md text-white'>
-               <span className=''><BiCartAdd size={25} /></span>
+               <span className=''><BiCartAdd onClick={()=> addToCart(item.id)} size={25} /></span>
              </p>
             </div>
           </div>

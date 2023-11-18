@@ -1,46 +1,62 @@
-import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import Maggie from '../assets/imgs/Maggie.png'
+import React , {useEffect} from 'react'
+import { NavLink} from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Indian from '../assets/imgs/Indian.png'
+import Chinese from '../assets/imgs/chinese.png'
+import Shakes from '../assets/imgs/shakes.png'
+import Rolls from '../assets/imgs/roll.png'
+import Burger from '../assets/imgs/burger.png'
 
 const FoodTypes = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className='max-w-[75rem] mx-auto mt-10'>
       {/* header */}
       <div>
-        <h1 className='font-bold md:text-[1.5rem] text-[1.3rem] text-center md:text-left'>What would you like to eat?</h1>
+        <h1 className='font-bold md:text-[2rem] text-purple-500 text-[1.3rem] text-center md:text-left'>What would you like to eat?</h1>
       </div>
 
       {/* crousel */}
       <div className='mt-10 mx-auto'>
-        <ul className='grid grid-cols-3 md:grid-cols-6'>
-          <NavLink to='/Food_Delivery_App/pizza'>
-          <li>
+        <ul className='grid grid-cols-2 gap-10 md:flex md:items-center md:gap-6'>
+          <NavLink to='/Food_Delivery_App/pizza' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-40' src="https://img.freepik.com/premium-photo/pizza-isolate-white-background-generative-ai_74760-2619.jpg" alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] text-purple-500'>Pizza</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/burger'>
-          <li>
-            <img className='cursor-pointer w-40' src="https://static.vecteezy.com/system/resources/previews/022/598/687/original/tasty-beef-burger-png.png" alt="" />
+          <NavLink to='/Food_Delivery_App/burger' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
+            <img className='cursor-pointer w-[9rem]' src={Burger} alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Burger</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/rolls'>
-          <li>
-            <img className='cursor-pointer w-36' src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="" />
+          <NavLink to='/Food_Delivery_App/rolls' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
+            <img className='cursor-pointer w-[12rem]' src={Rolls} alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] mt-3  text-purple-500'>Kathi Rolls</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/north'>
-          <li>
-            <img className='cursor-pointer w-40' src="https://www.farmboy.ca/wp-content/uploads/2021/05/butter-chicken.png" alt="" />
+          <NavLink to='/Food_Delivery_App/north' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
+            <img className='cursor-pointer w-[13rem]' src={Indian} alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>North Indian</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/shake'>
-          <li>
-            <img className='cursor-pointer w-40' src='https://static.vecteezy.com/system/resources/previews/024/041/496/original/3d-render-of-strawberry-shake-glass-with-whipped-cream-dripping-chocolate-syrup-element-png.png' alt="" />
+          <NavLink to='/Food_Delivery_App/shake' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
+            <img className='cursor-pointer w-[10rem]' src={Shakes} alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Desserts</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/chinese'>
-          <li>
-            <img className='cursor-pointer w-40' src="https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-fresh-steam-momos-png-image_6583751.png" alt="" />
+          <NavLink to='/Food_Delivery_App/chinese' data-aos="zoom-in" data-aos-duration="1500">
+          <li className='flex flex-col items-center'>
+            <img className='cursor-pointer w-[9.56rem]' src={Chinese} alt="" />
+            <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Chinese</p>
           </li>
           </NavLink>
         </ul>

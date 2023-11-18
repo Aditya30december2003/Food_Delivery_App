@@ -1,6 +1,6 @@
 export const best =[
     {
-        id: 1,
+        id: 66,
         name: 'Crispy Masala',
         category: 'burger',
         image:
@@ -8,7 +8,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 2,
+        id: 23,
         name: 'Aloo Pyaaz Paratha',
         category: 'burger',
         image:
@@ -16,7 +16,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 3,
+        id: 36,
         name: 'Cheese Pizza',
         category: 'pizza',
         image:
@@ -24,7 +24,7 @@ export const best =[
         price: '$',
       },
       {
-        id: 4,
+        id: 25,
         name: 'Butter Chicken',
         category: 'burger',
         image:
@@ -32,7 +32,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 5,
+        id: 50,
         name: 'Paneer Kathi Roll',
         category: 'Burger',
         image:
@@ -40,7 +40,7 @@ export const best =[
         price: '$',
       },
       {
-        id: 6,
+        id: 40,
         name: 'Chiken Tikka Pizza',
         category: 'pizza',
         image:
@@ -48,7 +48,7 @@ export const best =[
         price: '$$$',
       },
       {
-        id: 7,
+        id: 59,
         name: 'Kitkat Shake',
         category: 'burger',
         image:
@@ -56,7 +56,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 8,
+        id: 69,
         name: 'Crispy Chicken',
         category: 'burger',
         image:
@@ -64,7 +64,7 @@ export const best =[
         price: '$$$',
       },
       {
-        id: 9,
+        id: 17,
         name: 'Steamed Momos Sizzler',
         category: 'burger',
         image:
@@ -72,7 +72,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 10,
+        id: 27,
         name: 'Butter Naan',
         category: 'burger',
         image:
@@ -80,7 +80,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 11,
+        id: 42,
         name: 'Spicy Veg Peri Peri',
         category: 'pizza',
         image:
@@ -88,7 +88,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 12,
+        id: 44,
         name: 'Kadai Chicken Delight',
         category: 'pizza',
         image:
@@ -96,7 +96,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 13,
+        id: 54,
         name: 'Egg Bhurji Roll',
         category: '',
         image:
@@ -104,7 +104,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 14,
+        id: 15,
         name: 'Chicken Schezwan Rice',
         category: 'burger',
         image:
@@ -112,7 +112,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 15,
+        id: 28,
         name: 'Rajma Rice',
         category: 'Peri Peri Fries',
         image:
@@ -120,7 +120,7 @@ export const best =[
         price: '$$$',
       },
       {
-        id: 16,
+        id: 56,
         name: 'Chicken Seekh Roll',
         category: 'burger',
         image:
@@ -128,7 +128,7 @@ export const best =[
         price: '$$$',
       },
       {
-        id: 17,
+        id: 43,
         name: 'Hyderabadi Chicken',
         category: 'pizza',
         image:
@@ -136,7 +136,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 18,
+        id: 61,
         name: 'Choco Ice-cream Cake',
         category: 'burger',
         image:
@@ -144,7 +144,7 @@ export const best =[
         price: '$$$$',
       },
       {
-        id: 19,
+        id: 63,
         name: 'Oreo Shake',
         category: 'burger',
         image:
@@ -152,7 +152,7 @@ export const best =[
         price: '$$',
       },
       {
-        id: 20,
+        id: 26,
         name: 'Chana Masala',
         category: 'Burger',
         image:

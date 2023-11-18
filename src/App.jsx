@@ -14,6 +14,9 @@ import North from './components/North'
 import Shakes from './components/Shakes'
 import Chinese from './components/Chinese'
 import SignUpNow from './components/SignUpNow'
+import Cart from './components/Cart'
+import ShopContextProvider from './context/shop-context'
+
 
 
 function App() {
@@ -21,6 +24,7 @@ function App() {
 
   return (
     <>
+    <ShopContextProvider>
         <Navbar />
         <Routes>
         <Route path='/Food_Delivery_App/signup' element={<SignUp />} />
@@ -32,8 +36,10 @@ function App() {
         <Route path='/Food_Delivery_App/shake' element={<Shakes />} />
         <Route path='/Food_Delivery_App/chinese' element={<Chinese />} />
         <Route path='/Food_Delivery_App/signupNow' element={<SignUpNow />} />
+        <Route path='/Food_Delivery_App/Cart' element={<Cart/>} />
         </Routes>
         <Bottom />
+    </ShopContextProvider>
     </>
   )
 }

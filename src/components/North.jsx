@@ -1,9 +1,12 @@
-import React,{useState} from 'react'
+import React,{useState , useContext} from 'react'
 import {north} from '../Data/North'
 import {BiCartAdd} from 'react-icons/bi'
 
+import { ShopContext } from '../context/shop-context'
+
 const North = () => {
     const [norths , setNorth ] = useState(north);
+    const { addToCart , cartItems } = useContext(ShopContext);
 
     const filterPrice=(price)=>{
         setNorth(
@@ -48,7 +51,7 @@ const North = () => {
             <div className='flex justify-between py-3'>
               <p className='font-bold mx-2'>{item.name}</p>
               <p className='bg-purple-500 px-5 py-1 mr-2 rounded-md text-white'>
-               <span className=''><BiCartAdd size={25} /></span>
+               <span className=''><BiCartAdd onClick={()=> addToCart(item.id)} size={25} /></span>
              </p>
             </div>
           </div>

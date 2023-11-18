@@ -1,10 +1,13 @@
-import React,{useState} from 'react'
+import React,{useState , useContext} from 'react'
 import {roll} from '../Data/Rolls'
 import {BiCartAdd} from 'react-icons/bi'
 
+import {ShopContext} from '../context/shop-context'
+
 const Rolls = () => {
     const [rolls , setRolls ] = useState(roll);
-    
+    const { addToCart , cartItems } = useContext(ShopContext);
+
         const filterPrice=(price)=>{
             setRolls(
               roll.filter((item)=>{
@@ -47,7 +50,7 @@ const Rolls = () => {
             <div className='flex justify-between py-3'>
               <p className='font-bold mx-2'>{item.name}</p>
               <p className='bg-purple-500 px-5 py-1 mr-2 rounded-md text-white'>
-               <span className=''><BiCartAdd size={25} /></span>
+               <span className=''><BiCartAdd onClick={()=> addToCart(item.id)} size={25} /></span>
              </p>
             </div>
           </div>
