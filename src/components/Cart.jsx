@@ -39,9 +39,9 @@ const [best , setBests ] = useState(data);
        })}
       </div>
       
-      <div className='text-center items-center mx-auto my-5 flex flex-col gap-2 md:flex-row md:gap-10'>
-      <button className=' bg-purple-500 border-none rounded-sm text-white w-full md:w-2/3'>Checkout</button>
-      <NavLink to='/Food_Delivery_App/' className=' bg-purple-500 border-none rounded-sm text-white w-full md:w-2/3'>
+      <div className='text-center items-center mx-auto my-5 flex flex-col gap-2 md:flex-row md:gap-10 mt-20'>
+      <button className=' bg-purple-500 border-none rounded-sm text-white w-1/2 md:w-2/3'>Checkout</button>
+      <NavLink to='/Food_Delivery_App/' className=' bg-purple-500 border-none rounded-sm text-white w-1/2 md:w-2/3'>
       <button className='border-none'>Continue Discovering</button>
       </NavLink>
      </div>

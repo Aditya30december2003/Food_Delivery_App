@@ -6,7 +6,7 @@ import {BiLogoGmail} from 'react-icons/bi'
 
 const Bottom = () => {
   return (
-    <div className='mt-0 bg-purple-500  mx-auto bottom-0  w-full'>
+    <div className=' bg-purple-500  mx-auto w-full mt-[100%] md:mt-[8%]'>
     <h1 className='font-bold text-[1.7rem] w-full mx-auto text-center text-white pt-20'>Aditya Jain</h1>
 
     {/* <div>
@@ -26,7 +26,7 @@ const Bottom = () => {
     </div> */}
 
     <div>
-      <ul className='py-4 flex gap-2 w-full md:w-1/3 mx- md:mx-auto'>
+      <ul className='py-4 flex gap-2 w-full md:w-1/3  md:mx-auto'>
 
         
         <li className=' cursor-pointer bg-gray-500 p-3 rounded-[100%] mx-auto'>
