@@ -1,8 +1,2 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In the fast-paced realm of college life, where time is of the essence, hostelEats emerges as an innovative solution designed to simplify the food ordering process for hostel students. With a commitment to providing an optimal user experience, hostelEats has been meticulously developed using state-of-the-art web technologies, ensuring not only functionality but also responsiveness across various devices.
