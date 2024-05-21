@@ -12,7 +12,7 @@ const Signup = () => {
             <div className='text-[2.3rem] md:text-[3rem] font-bold text-white '>
                 hostel<span className='text-purple-500'>Eats</span>
             </div>
-            <NavLink to='/Food_Delivery_App' className='hidden md:text-white md:text-[1.3rem] md:mr-[6rem]'>Home</NavLink>
+            <NavLink to='/' className='hidden md:text-white md:text-[1.3rem] md:mr-[6rem]'>Home</NavLink>
             </div>
 
             {/* signup-card */}
@@ -24,7 +24,7 @@ const Signup = () => {
                 </div>
                  <button className='w-full mt-7 rounded-md bg-purple-800 border-none text-white font-bold'>Sign in</button>
 
-                 <p className='mt-5 text-white/80 mb-10'>New to hostelEats? <NavLink to='/Food_Delivery_App/signupNow'>Sign up now</NavLink></p>
+                 <p className='mt-5 text-white/80 mb-10'>New to hostelEats? <NavLink to='/signupNow'>Sign up now</NavLink></p>
             </div>
 
         </div>
