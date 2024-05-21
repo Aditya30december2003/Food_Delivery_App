@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="cursor-pointer right-30" onClick={()=> setNav(!nav)}>
         <FaHamburger size={30} />
     </div>
-    <NavLink to='/Food_Delivery_App'>
+    <NavLink to='/'>
     <h1 className="text-2xl sm:text-2xl lg:text-4xl text-white bg-black p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
         hostel<span className="font-bold text-purple-500">Eats</span>
     </h1>
@@ -43,14 +43,14 @@ const Navbar = () => {
 
     <div className="right mr-[1rem] hidden md:flex md:gap-5">
       <button className=''>
-      <NavLink to='/Food_Delivery_App/Cart'>
+      <NavLink to='/Cart'>
       < MdOutlineShoppingCart size={25}/>
      </NavLink>
       </button>
     <button className="flex place-items-center w-24  hover:bg-black hover:text-white ">
     {/* <BsFillCartFill className="ml-2" size={20} color='white'/>
      <p className="px-3 text-white">Cart</p> */}
-     <NavLink to='/Food_Delivery_App/signup'
+     <NavLink to='/signup'
       className='mx-auto text-center'>
         Log in
       </NavLink>
@@ -74,8 +74,8 @@ const Navbar = () => {
       <nav>
         <ul className="flex flex-col p-5 space-y-3">
           <li className='flex items-center text-xl cursor-pointer'><TbTruckDelivery className="mr-4" size={25}/> Orders</li>
-          <NavLink to='/Food_Delivery_App/' className='flex items-center text-xl cursor-pointer'><RiHome5Fill className="mr-4" size={25}/> Home</NavLink>
-          <NavLink to='/Food_Delivery_App/Cart' className='flex items-center text-xl cursor-pointer'>< FaShoppingCart className="mr-4" size={25}/> Cart</NavLink>
+          <NavLink to='/' className='flex items-center text-xl cursor-pointer'><RiHome5Fill className="mr-4" size={25}/> Home</NavLink>
+          <NavLink to='/Cart' className='flex items-center text-xl cursor-pointer'>< FaShoppingCart className="mr-4" size={25}/> Cart</NavLink>
           <li className='flex items-center text-xl cursor-pointer'><FaWallet className="mr-4" size={20}/> Wallet</li>
           <li className='flex items-center text-xl cursor-pointer'><MdHelp className="mr-4" size={20}/> Help</li>
           <li className='flex items-center text-xl cursor-pointer'><AiFillTag className="mr-4" size={20}/> Promotions</li>
