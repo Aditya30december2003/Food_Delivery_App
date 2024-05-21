@@ -27,16 +27,16 @@ function App() {
     <ShopContextProvider>
         <Navbar />
         <Routes>
-        <Route path='/Food_Delivery_App/signup' element={<SignUp />} />
-        <Route path='/Food_Delivery_App' element={<Home />} />
-        <Route path='/Food_Delivery_App/pizza' element={<Pizza />} />
-        <Route path='/Food_Delivery_App/burger' element={<Burger />} />
-        <Route path='/Food_Delivery_App/rolls' element={<Rolls />} />
-        <Route path='/Food_Delivery_App/north' element={<North />} />
-        <Route path='/Food_Delivery_App/shake' element={<Shakes />} />
-        <Route path='/Food_Delivery_App/chinese' element={<Chinese />} />
-        <Route path='/Food_Delivery_App/signupNow' element={<SignUpNow />} />
-        <Route path='/Food_Delivery_App/Cart' element={<Cart/>} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/pizza' element={<Pizza />} />
+        <Route path='/burger' element={<Burger />} />
+        <Route path='/rolls' element={<Rolls />} />
+        <Route path='/north' element={<North />} />
+        <Route path='/shake' element={<Shakes />} />
+        <Route path='/chinese' element={<Chinese />} />
+        <Route path='/signupNow' element={<SignUpNow />} />
+        <Route path='/Cart' element={<Cart/>} />
         </Routes>
         <Bottom />
     </ShopContextProvider>
