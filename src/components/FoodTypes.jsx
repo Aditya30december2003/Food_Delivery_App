@@ -23,37 +23,37 @@ const FoodTypes = () => {
       {/* crousel */}
       <div className='mt-10 mx-auto'>
         <ul className='grid grid-cols-2 gap-10 md:flex md:items-center md:gap-6'>
-          <NavLink to='/Food_Delivery_App/pizza' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/pizza' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-40' src="https://img.freepik.com/premium-photo/pizza-isolate-white-background-generative-ai_74760-2619.jpg" alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] text-purple-500'>Pizza</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/burger' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/burger' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-[9rem]' src={Burger} alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Burger</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/rolls' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/rolls' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-[12rem]' src={Rolls} alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] mt-3  text-purple-500'>Kathi Rolls</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/north' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/north' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-[13rem]' src={Indian} alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>North Indian</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/shake' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/shake' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-[10rem]' src={Shakes} alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Desserts</p>
           </li>
           </NavLink>
-          <NavLink to='/Food_Delivery_App/chinese' data-aos="zoom-in" data-aos-duration="1500">
+          <NavLink to='/chinese' data-aos="zoom-in" data-aos-duration="1500">
           <li className='flex flex-col items-center'>
             <img className='cursor-pointer w-[9.56rem]' src={Chinese} alt="" />
             <p className='font-bold text-[1rem] md:text-[1.3rem] mt-2  text-purple-500'>Chinese</p>
