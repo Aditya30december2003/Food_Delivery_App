@@ -22,7 +22,7 @@ const Signup = () => {
                 <input type="text" placeholder='Email'  className='px-2 py-3 rounded-md outline-none bg-white text-black font-bold' />
                 <input type="password" placeholder='Password' className='px-2 py-3 rounded-md outline-none bg-white text-black font-bold' />
                 </div>
-                 <button className='w-full mt-7 rounded-md bg-purple-800 border-none text-white font-bold'>Sign in</button>
+                 <NavLink to='/Food_Delivery_App/home' className='w-full mt-7 rounded-md bg-purple-800 border-none text-white font-bold'>Sign in</button>
 
                  <p className='mt-5 text-white/80 mb-10'>New to hostelEats? <NavLink to='/signupNow'>Sign up now</NavLink></p>
             </div>
